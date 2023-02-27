@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,700;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>
+        <img src="images.png">Tytuł strony
+    </title>
+</head>
+
+<body>
+    <div id="phones">
+        <p>this website is not anavaible for phones</p>
+    </div>
+    <header>
+        <h1>Bookly</h1>
+        <div class="settings-header">
+            <span class="material-symbols-outlined" id="add_book">
+                add
+            </span>
+            <a href="#">
+                <span class="material-symbols-outlined ">
+                    settings
+                </span>
+            </a>
+            </a>
+            <a href="#"><span class="material-symbols-outlined">
+                    device_reset
+                </span> </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="popup ">
+            <span class="material-symbols-outlined" id="goBack">
+                close
+            </span>
+            <input type="text" id="title" name="title" placeholder="Tittle" required>
+            <input type="text" id="author" name="author" placeholder="author" required>
+            <input type="number" id="pages" name="apagesthor" placeholder="pages" required>
+            <span id="optional">Published(optional):
+                <input type="date" id="published" name="published" placeholder="published" required></span>
+            <div class="choiceDiv">
+                <p class="choice-description">Have you bought it? ;)</p>
+                <select id="choice">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <input type="submit" id="submit">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <label for="select_all">Select all</label>
+                        <input title="Select/Deselect All" type="checkbox" id="select_all">
+                    </th>
+                    <th>
+                        <p id="title">Title</p>
+                    </th>
+                    <th>
+                        <p id="title">Author</p>
+                    </th>
+                    <th>
+                        <p id="title">Pages</p>
+                    </th>
+                    <th>
+                        <p id="title">Published</p>
+                    </th>
+                    <th>
+                        <p id="title">Acquired</p>
+                    </th>
+                    <th>
+                        <p id="title">Status</p>
+                    </th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="select_leiqxlqp" name="selected[]" value="leiqxlqp">
+                    </td>
+                    <td class="book_title">test</td>
+                    <td class="book_author">test</td>
+                    <td class="book_pages">test</td>
+                    <td class="book_published">test</td>
+                    <td class="book_acquired">test</td>
+                    <td class="book_status">Read</td>
+                    <!-- <td class="book_status2">UnRead</td> -->
+                    <td class="book_edit"> <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="select_leiqxlqp" name="selected[]" value="leiqxlqp">
+                    </td>
+                    <td class="book_title">test</td>
+                    <td class="book_author">test</td>
+                    <td class="book_pages">test</td>
+                    <td class="book_published">test</td>
+                    <td class="book_acquired">test</td>
+                    <td class="book_status">Read</td>
+                    <td class="book_edit"> <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>
+                    </td>
+
+                </tr>
+            </tbody>
+
+        </table>
+
+    </main>
+    <footer id="copyright">coded by © 2023 <a href="https://github.com/dobravaza"><span
+                class="nick">dobravaza</span></a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
